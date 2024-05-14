@@ -16,8 +16,11 @@ return {
         "gofumpt",
         "impl",
         "gomodifytags",
+        "delve",
         "css-lsp",
         "codelldb",
+        "basedpyright",
       })
     end,
   },
+}
