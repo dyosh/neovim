@@ -20,6 +20,9 @@ return {
         "css-lsp",
         "codelldb",
         "basedpyright",
+        "pyright",
+        "ruff",
+        "clangd",
       })
     end,
   },
