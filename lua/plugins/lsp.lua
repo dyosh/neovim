@@ -22,7 +22,7 @@ return {
         "basedpyright",
         "pyright",
         "ruff",
-        "clangd",
+        "codelldb",
       })
     end,
   },
