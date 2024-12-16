@@ -6,6 +6,16 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
+-- Set 4 spaces for C++ files
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "cpp", "c" },
+  callback = function()
+    vim.bo.tabstop = 4 -- Number of spaces for a tab
+    vim.bo.shiftwidth = 4 -- Number of spaces for autoindent
+    vim.bo.expandtab = true -- Convert tabs to spaces
+  end,
+})
+
 require("config.diagnostics")
 require("lazy").setup({
   spec = {
