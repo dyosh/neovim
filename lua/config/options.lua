@@ -7,3 +7,4 @@ vim.opt.relativenumber = false
 vim.opt.number = false
 
 vim.o.swapfile = false
+vim.g.snacks_animate = false
