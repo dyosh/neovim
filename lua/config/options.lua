@@ -4,7 +4,7 @@
 
 vim.opt.guicursor = "i:blinkwait700-blinkon400-blinkoff250"
 vim.opt.relativenumber = false
-vim.opt.number = false
+vim.opt.number = true
 
 vim.o.swapfile = false
 vim.g.snacks_animate = false
